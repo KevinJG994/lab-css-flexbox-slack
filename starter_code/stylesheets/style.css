@@ -28,6 +28,19 @@ nav {
 
 .navbar li {
   display: none;
+  color: #fff;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+}
+
+.navbar-list {
+  display: flex;
 }
 
 .logo {
@@ -84,11 +97,12 @@ header {
   background-color: #4285f4;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .button-google span {
   color: #fff;
+  margin: auto;
 }
 
 .logo-google {
@@ -208,7 +222,7 @@ header {
   font-weight: bold;
   border-radius: 3px;
   cursor: pointer;
-  margin: 10px 20px;
+  margin: 10px;
   height: 50px;
 }
 
@@ -290,6 +304,13 @@ footer {
     text-align: center;
   }
 
+  .button-container button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
@@ -303,6 +324,146 @@ footer {
 }
 
 @media (width > 768px) and (width < 1024px) {
+  header {
+    background-image: url('../images/hero-product-ui.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .header-container {
+    padding: 20px;
+  }
+
+  .header-container h1 {
+
+    font-size: 4rem;
+    width: 60%;
+    margin: 0;
+  }
+
+  .header-container p {
+    width: 60%;
+  }
+
+  .header-button {
+    width: 60%;
+  }
+
+  .header-button button {
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .hero-container {
+    display: none;
+  }
+
+  .info-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .welcome-container h3 {
+    text-align: center;
+  }
+
+  .button-container button {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-network {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .social-network li {
+    margin-right: 5%;
+  }
+}
+
+@media (width > 1024px) and (width < 1440px) {
+  header {
+    background-image: url('../images/hero-product-ui.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .navbar {
+    width: 160%;
+  }
+
+  .navbar-list {
+    width: 160%;
+    justify-content: space-evenly;
+  }
+
+  .navbar-list li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-button {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .hidden-nav-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  .SingIn-button {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto 10px;
+  }
+
+  .TryforFree-button {
+    color: #540b51;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto 10px;
+  }
+
   .header-container {
     padding: 20px;
   }
@@ -347,6 +508,156 @@ footer {
 
   .welcome-container h3 {
     text-align: center;
+  }
+
+  .button-container button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-network {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .social-network li {
+    margin-right: 5%;
+  }
+}
+
+@media (width > 1440px) {
+  header {
+    background-image: url('../images/hero-product-ui.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .navbar {
+    width: 160%;
+  }
+
+  .navbar-list {
+    width: 160%;
+    justify-content: space-evenly;
+  }
+
+  .navbar-list li {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-button {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .hidden-nav-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  .SingIn-button {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto 10px;
+  }
+
+  .TryforFree-button {
+    color: #540b51;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin: auto 10px;
+  }
+
+  .header-container {
+    padding: 20px;
+  }
+
+  .header-container h1 {
+    font-size: 4rem;
+    width: 60%;
+    margin: 0;
+  }
+
+  .header-container p {
+    width: 60%;
+  }
+
+  .header-button {
+    width: 60%;
+  }
+
+  .header-button button {
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .hero-container img {
+    width: 500px;
+    display: none;
+  }
+
+  .info-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .welcome-container h3 {
+    text-align: center;
+  }
+
+  .button-container button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
   }
 
   footer {

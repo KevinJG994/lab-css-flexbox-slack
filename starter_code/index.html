@@ -19,8 +19,8 @@
 <body>
   <!-- NAVBAR -->
   <nav>
+    <img src="./images/slack-logo.png" alt="Slack logo" class="logo" />
     <div class="navbar">
-      <img src="./images/slack-logo.png" alt="Slack logo" class="logo" />
 
       <ul class="navbar-list">
         <li>
@@ -43,16 +43,16 @@
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
 
-      <button>
+      <button class="menu-icon">
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <ul hidden>
+      <ul hidden class="hidden-nav-button">
         <li>
-          <a href="#">Sign in</a>
+          <a href="#" class="SingIn-button">Sign in</a>
         </li>
         <li>
-          <a href="#">Try for free</a>
+          <a href="#" class="TryforFree-button">Try for free</a>
         </li>
       </ul>
     </div>
@@ -74,7 +74,6 @@
           <span>Sign up with Google</span>
         </button>
       </div>
-
     </div>
 
     <div class="hero-container">
@@ -87,12 +86,12 @@
       <p>Trusted by companies all over the world</p>
 
       <div class="companies-images">
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" class="logo-airbnb"/>
-        <img src="./images/logo-nasa.png" alt="NASA logo" class="logo-nasa"/>
-        <img src="./images/logo-uber.png" alt="Uber logo" class="logo-uber"/>
-        <img src="./images/logo-target.png" alt="Target logo" class="logo-target"/>
-        <img src="./images/logo-nyt.png" alt="New York Times logo" class="logo-nyt"/>
-        <img src="./images/logo-spotify.png" alt="Spotify logo" class="logo-spotify"/>
+        <img src="./images/logo-airbnb.png" alt="Airbnb logo" class="logo-airbnb" />
+        <img src="./images/logo-nasa.png" alt="NASA logo" class="logo-nasa" />
+        <img src="./images/logo-uber.png" alt="Uber logo" class="logo-uber" />
+        <img src="./images/logo-target.png" alt="Target logo" class="logo-target" />
+        <img src="./images/logo-nyt.png" alt="New York Times logo" class="logo-nyt" />
+        <img src="./images/logo-spotify.png" alt="Spotify logo" class="logo-spotify" />
       </div>
 
     </section>
@@ -132,8 +131,10 @@
     <section class="welcome-container">
       <h3>Welcome to your new digital HQ</h3>
 
-      <button class="button-try">Try for free</button>
-      <button class="button-talk">Talk to sales</button>
+      <div class="button-container">
+        <button class="button-try">Try for free</button>
+        <button class="button-talk">Talk to sales</button>
+      </div>
     </section>
 
   </main>
